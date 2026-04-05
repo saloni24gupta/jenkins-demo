@@ -14,5 +14,11 @@ pipeline {
                 sh 'docker run -d -p 8086:80 --name my-container my-app'
             }
         }
+         stage('cm') {
+            steps {
+                sh 'ls'
+              
+            }
+        }
     }
 }
